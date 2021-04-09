@@ -6,3 +6,15 @@ final public class MUIZeroHeightCollectionViewListHeaderFooterView: MUICollectio
         ])
     }
 }
+
+extension MUIZeroHeightCollectionViewListHeaderFooterView {
+    @available(iOS 14, *)
+    public static let sectionHeaderRegistration = UICollectionView.SupplementaryRegistration<
+        MUIZeroHeightCollectionViewListHeaderFooterView
+    >(elementKind: UICollectionView.elementKindSectionHeader) { _, _, _ in }
+
+    @available(iOS 14, *)
+    public static let sectionFooterRegistration = UICollectionView.SupplementaryRegistration<
+        MUIZeroHeightCollectionViewListHeaderFooterView
+    >(elementKind: UICollectionView.elementKindSectionFooter) { _, _, _ in }
+}
