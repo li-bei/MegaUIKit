@@ -1,7 +1,6 @@
 import UIKit
 
-@available(iOS 14, *)
-open class MUICollectionViewListCell: UICollectionViewListCell {
+open class MUICollectionViewCell: UICollectionViewCell {
     public override init(frame: CGRect) {
         super.init(frame: frame)
     }
